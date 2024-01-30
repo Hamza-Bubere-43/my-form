@@ -4,17 +4,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{
-font-family: Calibri, Helvetica, sans-serif;
+font-family: 'Times New Roman', Times, serif;
 background-color: #5ABCF8;
 }
 .container {
-padding: 100px;
-margin-bottom: 40px;
+
+padding: 10px;
+margin-bottom: 4px;
 background-color: lightgrey;
+border-radius: 30px;
+width: 25%;
+
 }
 input[type=string], textarea {
-width: 15%;
-padding: 25px;
+width: 50%;
+padding: 15px;
 display: inline-block;
 background: white;
 opacity: 0.9;
@@ -29,45 +33,51 @@ padding: 30px 30px;
 }
 hr {
 border: 1px solid #595656;
-margin-bottom: 40px;
+margin-bottom: 4px;
 }
 .submitbtn {
+display: flex;
 background-color: yellow;
 color: blue;
-padding: 16px 20px;
-margin: 50px 0;
+padding: 16px 12px;
+margin: 30px 0;
 border: 2px solid #f1f1f1;
 cursor: pointer;
-width: 100%;
+width: 15%;
 opacity: 0.9;
 
 }
 .submitbtn:hover {
 opacity: 1;
+color: blue;
 }
 </style>
 </head>
-<body>
+<body align = "center">
 <form>
 <div class="container">
 <center> <h1> Details </h1> </center>
 <hr>
 <label><b> Firstname: </b></label>
-<input type="string" name="firstname" placeholder= "Firstname" size="10" required />
+<input type="string" name="firstname" placeholder= "Enter Firstname" size="15" required />
 <br>
 <br>
-<label><b> SAPID: </b></label>
-<input type="string" name="SAPID" placeholder="SAPID" size="10"required />
+<label><b> Email: </b></label>
+<input type="string" placeholder="Enter EmailID" size="10"required />
 <br>
 <br>
-<center> <label><b> VIDEO </b></label> <center>
+<label><b> SAP-ID: </b></label>
+<input type="string" name="SAPID" placeholder="Enter SAPID" size="10"required />
+<br>
+<br>
+<label><b> VIDEO </b></label>
 <br>
 <video width="320" height="240" controls>
   <source src="movie.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
-<button type="submit" class="submitbtn">Submit</button>
+<center> <button type="submit" class="submitbtn">Submit</button> </center>
 </div>
 </form>
 </body>
