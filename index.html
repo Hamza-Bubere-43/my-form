@@ -7,6 +7,7 @@
 body{
 font-family: 'Times New Roman', Times, serif;
 background-color: #5ABCF8;
+padding: 50px 90px 20px 50px; 
 }
 .container {
 display: flexbox;
@@ -14,7 +15,7 @@ padding: 15px 15px;
 margin-bottom: 40px;
 background-color: grey;
 border-radius: 10px;
-width: 40%;
+width: 30%;
 
 
 }
@@ -60,7 +61,7 @@ background-color: yellow;
 <body>
 <form>
 <div class="container">
-<center> <h1> Welcome to the form </h1> </form> </center></body>
+<center> <h1> Welcome To My Form </h1> </form> </center></body>
 <hr>
 <label><b> Firstname: </b></label>
 <input type="string" name="firstname" placeholder= "Enter Firstname" size="15" required />
@@ -74,7 +75,7 @@ background-color: yellow;
 <input type="string" name="SAPID" placeholder="Enter SAPID" size="10"required />
 <br>
 <br>
-<label><b>Select Programming Language of your Choice : </b></label>
+<label><b><h3>Select Programming Language of your Choice : </h3></b></label>
 <select>
 <option value="--Select--">--Select--</option>
 <option value="Java">Java</option>
@@ -86,12 +87,13 @@ background-color: yellow;
 <!-- </div> -->
 <br>
 <br>
-<label><b> VIDEO </b></label>
+<center> <label><b> VIDEO </b></label>
 <br>
 <video width="auto" height="240" controls>
   <source src="movie.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+</center>
 
 <center> <button type="submit" class="submitbtn">Submit</button> </center>
 </div>
