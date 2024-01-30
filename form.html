@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+font-family: Calibri, Helvetica, sans-serif;
+background-color: #5ABCF8;
+}
+.container {
+padding: 100px;
+margin-bottom: 40px;
+background-color: lightgrey;
+}
+input[type=string], textarea {
+width: 15%;
+padding: 25px;
+display: inline-block;
+background: white;
+opacity: 0.9;
+border: 2px solid #595656;
+}
+input[type=string]:focus,  {
+background-color: green;
+outline: 1px;
+}
+div {
+padding: 30px 30px;
+}
+hr {
+border: 1px solid #595656;
+margin-bottom: 40px;
+}
+.submitbtn {
+background-color: yellow;
+color: blue;
+padding: 16px 20px;
+margin: 50px 0;
+border: 2px solid #f1f1f1;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+
+}
+.submitbtn:hover {
+opacity: 1;
+}
+</style>
+</head>
+<body>
+<form>
+<div class="container">
+<center> <h1> Details </h1> </center>
+<hr>
+<label><b> Firstname: </b></label>
+<input type="string" name="firstname" placeholder= "Firstname" size="10" required />
+<br>
+<br>
+<label><b> SAPID: </b></label>
+<input type="string" name="SAPID" placeholder="SAPID" size="10"required />
+<br>
+<br>
+<center> <label><b> VIDEO </b></label> <center>
+<br>
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<button type="submit" class="submitbtn">Submit</button>
+</div>
+</form>
+</body>
+</html>
